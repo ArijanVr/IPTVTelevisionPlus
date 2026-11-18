@@ -1,0 +1,43 @@
+import groovy.json.JsonOutput
+
+plugins { id 'com.android.application' }
+def presetProperties = new Properties()
+def presetFile = rootProject.file('playlist.local.properties')
+if (presetFile.exists()) { presetFile.withInputStream { presetProperties.load(it) } }
+// -PpublicBuild: Build für die öffentliche Release-Ablage, ohne eingebettete Playlist-Adresse.
+def presetUrl = project.hasProperty('publicBuild') ? '' : (System.getenv('ARJO_DEFAULT_PLAYLIST_URL') ?: presetProperties.getProperty('playlistUrl', ''))
+
+android {
+    namespace 'ch.arjo.tv.android'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'ch.arjo.iptelevision'
+        minSdk 26
+        targetSdk 35
+        versionCode 5
+        versionName '1.2.0'
+    }
+    buildFeatures { buildConfig true }
+    buildTypes {
+        debug { buildConfigField 'String', 'DEFAULT_PLAYLIST_URL', '""' }
+        release {
+            signingConfig signingConfigs.debug; debuggable false; minifyEnabled false
+            buildConfigField 'String', 'DEFAULT_PLAYLIST_URL', JsonOutput.toJson(presetUrl)
+        }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    testOptions { unitTests.includeAndroidResources = true }
+}
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    def media3 = '1.9.4'
+    implementation "androidx.media3:media3-exoplayer:$media3"
+    implementation "androidx.media3:media3-exoplayer-hls:$media3"
+    implementation "androidx.media3:media3-exoplayer-dash:$media3"
+    implementation "androidx.media3:media3-ui:$media3"
+    implementation "androidx.media3:media3-session:$media3"
+    implementation 'androidx.annotation:annotation-jvm:1.9.1'
+    testImplementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.14.1'
+}

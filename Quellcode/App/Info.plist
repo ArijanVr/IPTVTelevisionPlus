@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Zusätzliche Schlüssel; Xcode führt sie mit der generierten Info.plist zusammen (Generate Info.plist File = Yes). -->
+
+    <!-- Sparkle (nur macOS): Updates aus dem neuesten Release der öffentlichen Ablage, per EdDSA-Schlüssel geprüft. -->
+    <key>SUFeedURL</key>
+    <string>https://github.com/ArijanVr/IPTVTelevisionPlus/releases/latest/download/appcast.xml</string>
+    <key>SUPublicEDKey</key>
+    <string>TH7d9NMgCYMEuZJf0ltP2BaELYDkgmW9aCMdrND2C3g=</string>
+    <key>SUEnableAutomaticChecks</key>
+    <true/>
+
+    <!-- Sprachen: Deutsch (Schweiz) ist die Entwicklungssprache, Englisch kommt aus App/Localizable.xcstrings dazu. -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>de</string>
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>de</string>
+        <string>en</string>
+    </array>
+
+    <!-- Links aus dem Top Shelf: arjotv://play?item=movie-123 -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>ch.arjo.iptelevision</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>arjotv</string>
+            </array>
+        </dict>
+    </array>
+
+    <!-- Die meisten Anbieter liefern nur HTTP; die Adresse gibt der Nutzer selbst ein und ist vorab nicht bekannt. -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+
+    <!-- Anbieter oder Playlists können auch im lokalen Netzwerk stehen. -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>IPTelevision+ verbindet sich mit deinem Anbieter, der auch in deinem lokalen Netzwerk stehen kann.</string>
+
+    <!-- Wiedergabe läuft im Hintergrund weiter (Sperrbildschirm, CarPlay, AirPlay); stille Pushes von CloudKit (iCloud-Sync). -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+        <string>remote-notification</string>
+    </array>
+
+    <!-- CarPlay: Szene nur mit der von Apple freigegebenen Berechtigung (docs/CarPlay.md); ohne sie verbindet sich CarPlay nicht. -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <true/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>CPTemplateApplicationSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneClassName</key>
+                    <string>CPTemplateApplicationScene</string>
+                    <key>UISceneConfigurationName</key>
+                    <string>CarPlay</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).CarPlaySceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+
+    <!-- Es wird nur Standard-Verschlüsselung (HTTPS/TLS des Systems) verwendet. -->
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+</dict>
+</plist>

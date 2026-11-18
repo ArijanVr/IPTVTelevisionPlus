@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARJO TV – Download</title>
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <img class="mark" src="lockup.png" alt="TV+">
+  <h1>ARJO TV</h1>
+  <p class="lead">Der IPTV-Player für Mac, iPhone und Apple TV. Ohne Werbung, ohne Tracker.</p>
+  <p class="meta" id="version">Version –</p>
+</header>
+
+<main>
+  <section class="cards">
+    <article class="card reveal" id="card-macos">
+      <h2>Mac</h2>
+      <p class="req">macOS 15 oder neuer · Apple Silicon und Intel</p>
+      <div class="action" data-key="macOS"></div>
+      <ol>
+        <li>ZIP entpacken und <b>ARJO TV</b> in «Programme» ziehen.</li>
+        <li>Im Programm «Terminal» einfügen und Enter drücken:<br><code>xattr -cr "/Applications/ARJO TV.app"</code></li>
+        <li>App starten. Falls macOS blockiert: Systemeinstellungen → Datenschutz &amp; Sicherheit → «Trotzdem öffnen».</li>
+      </ol>
+      <p class="note">Die App ist nicht notarisiert (kein bezahlter Developer-Account), daher dieser Schritt.</p>
+    </article>
+
+    <article class="card reveal" id="card-ios">
+      <h2>iPhone</h2>
+      <p class="req">iOS 18 oder neuer</p>
+      <div class="action" data-key="iOS"></div>
+      <p class="note" id="ios-note">Eine Installation auf fremden iPhones erfordert Apple-Signierung (bezahltes Apple-Developer-Programm).</p>
+    </article>
+
+    <article class="card reveal" id="card-tvos">
+      <h2>Apple TV</h2>
+      <p class="req">tvOS 18 oder neuer</p>
+      <div class="action" data-key="tvOS"></div>
+      <p class="note">Für den Apple TV liegt derzeit keine installierbare Datei vor; die App wurde nur im tvOS-Simulator geprüft.</p>
+    </article>
+  </section>
+
+  <section class="verify reveal">
+    <h2>Prüfsummen</h2>
+    <p>Mit <code>shasum -a 256 Datei</code> im Terminal vergleichen.</p>
+    <table id="sums"></table>
+  </section>
+</main>
+
+<footer>ARJO TV liefert keine Sender oder Inhalte. Eigene Zugangsdaten (Xtream oder M3U) sind nötig. Die Dateien liegen im Ordner <code>../downloads</code>; Website und Downloads gemeinsam hochladen.</footer>
+<script src="release-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

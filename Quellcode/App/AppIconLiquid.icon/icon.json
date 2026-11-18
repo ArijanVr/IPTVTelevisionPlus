@@ -1,0 +1,51 @@
+{
+  "color-space-for-untagged-svg-colors": "display-p3",
+  "fill": {
+    "solid": "extended-srgb:0.03922,0.04706,0.04314,1.00000"
+  },
+  "groups": [
+    {
+      "blend-mode": "normal",
+      "hidden": false,
+      "layers": [
+        {
+          "image-name": "02-plus.svg",
+          "name": "plus",
+          "position": {
+            "scale": 1,
+            "translation-in-points": [
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "image-name": "01-screen.svg",
+          "name": "screen",
+          "position": {
+            "scale": 1,
+            "translation-in-points": [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "lighting": "individual",
+      "name": "iptelevisionplus",
+      "position": {
+        "scale": 1,
+        "translation-in-points": [
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "supported-platforms": {
+    "circles": [
+      "watchOS"
+    ],
+    "squares": "shared"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "images" : [
+    { "filename" : "Lockup-hell.png", "idiom" : "universal" },
+    { "appearances" : [ { "appearance" : "luminosity", "value" : "dark" } ], "filename" : "Lockup-dunkel.png", "idiom" : "universal" }
+  ],
+  "info" : { "author" : "xcode", "version" : 1 }
+}

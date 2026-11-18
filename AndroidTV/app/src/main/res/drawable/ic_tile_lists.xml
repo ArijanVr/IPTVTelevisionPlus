@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kachel-Icon (24 dp, Off-White), einfache Formen ohne Bibliothek. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:strokeColor="#FDFDFC" android:strokeWidth="2" android:strokeLineCap="round" android:pathData="M9,6 H20 M9,12 H20 M9,18 H20" />
+    <path android:fillColor="#FDFDFC" android:pathData="M4.5,4.8 a1.4,1.4 0 1 0 0.01,0 Z M4.5,10.8 a1.4,1.4 0 1 0 0.01,0 Z M4.5,16.8 a1.4,1.4 0 1 0 0.01,0 Z" />
+</vector>

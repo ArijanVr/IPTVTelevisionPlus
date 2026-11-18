@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13BDBDEEB4FBCE0E132E49AE /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF955269A2955B07B30E69C /* CarPlaySceneDelegate.swift */; };
+		285BFCD4B9ECC8C2B3F3E7C9 /* ArjoIntro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 41F3FBD426E071580DDDDC40 /* ArjoIntro.mp4 */; };
+		2AF5E5D39F8720B41783C110 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840CDA5D1BC027162F27ECE /* IntroView.swift */; };
+		2E7B0676800C1475DB116C87 /* GeistMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA66CB1D11191E291EA4AF66 /* GeistMono-Regular.ttf */; };
+		31089FB87937FB24C97C57F6 /* OFL-Geist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F452080FB9C0440585704 /* OFL-Geist.txt */; };
+		351AC56FCA50B6DE693879DE /* ARJOUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4267D61E1841356A2BC59621 /* ARJOUI */; };
+		4A10137F1D1079EB49E3CE08 /* ARJOPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 8A9D74A3DD9837C6CBB8C292 /* ARJOPlayer */; };
+		4C8A03EBDAC1DBFB21796943 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECFF9AA6606C47FD491498 /* AppEnvironment.swift */; };
+		55EC338075A7CBDE8B09B4FA /* ARJOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 25AEFD59610360F72B3EDC28 /* ARJOCore */; };
+		5C517F6B934CF45F9A23C87B /* ARJONetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 418AAAE6D358C5501A72A652 /* ARJONetwork */; };
+		616FCD37EDF0D1828E23315D /* Geist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 718251CA74912C18A4A90F32 /* Geist-Medium.ttf */; };
+		8C63AFF9608447ED8CFCCB30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB00253E9670C76817412C /* Assets.xcassets */; };
+		B00A1926B14CCC4D2C388587 /* ARJOUpdate in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9E1E57ACDB33502A65B88D /* ARJOUpdate */; };
+		BF5D532AE6A9E779A7B8C3F5 /* ARJOTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680CAEA64802D169DFFCD1FC /* ARJOTVApp.swift */; };
+		C6B024A7262861B65CCF391B /* Geist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAA6EBA26A3A9575F271A6D9 /* Geist-Regular.ttf */; };
+		D31B1BF728DF27AD11F713BF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C71F347B578E4A38D2AB9A55 /* Localizable.xcstrings */; };
+		DA912610DA5C4850AE2D2900 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1463EEB076C3A4E3EC5277ED /* PrivacyInfo.xcprivacy */; };
+		E8E8A826F2785D4CE6EEC0A9 /* ARJOData in Frameworks */ = {isa = PBXBuildFile; productRef = A9A724B15B9CAC45C2763B3C /* ARJOData */; };
+		FAC9ADA3F63985C764CC3C70 /* AppIconLiquid.icon in Resources */ = {isa = PBXBuildFile; fileRef = 782AD8FDA190A39FF428B8B4 /* AppIconLiquid.icon */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1463EEB076C3A4E3EC5277ED /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		407C0CE24605CC774736F2E7 /* ARJOUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ARJOUI; path = Packages/ARJOUI; sourceTree = SOURCE_ROOT; };
+		41F3FBD426E071580DDDDC40 /* ArjoIntro.mp4 */ = {isa = PBXFileReference; path = ArjoIntro.mp4; sourceTree = "<group>"; };
+		4816B5B2DC21E335BD2A1954 /* ARJOTV.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ARJOTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5840CDA5D1BC027162F27ECE /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		63B3B5A575E01CE99E84D44F /* ARJOPlayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ARJOPlayer; path = Packages/ARJOPlayer; sourceTree = SOURCE_ROOT; };
+		680CAEA64802D169DFFCD1FC /* ARJOTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARJOTVApp.swift; sourceTree = "<group>"; };
+		6EBB00253E9670C76817412C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		718251CA74912C18A4A90F32 /* Geist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-Medium.ttf"; sourceTree = "<group>"; };
+		77F58C59A54F5A1C3357B02C /* ARJOCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ARJOCore; path = Packages/ARJOCore; sourceTree = SOURCE_ROOT; };
+		782AD8FDA190A39FF428B8B4 /* AppIconLiquid.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIconLiquid.icon; sourceTree = "<group>"; };
+		9988B079978612927B3E5FB0 /* ARJOUpdate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ARJOUpdate; path = Packages/ARJOUpdate; sourceTree = SOURCE_ROOT; };
+		9BF955269A2955B07B30E69C /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		9F9F452080FB9C0440585704 /* OFL-Geist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-Geist.txt"; sourceTree = "<group>"; };
+		C71F347B578E4A38D2AB9A55 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		CA66CB1D11191E291EA4AF66 /* GeistMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeistMono-Regular.ttf"; sourceTree = "<group>"; };
+		CAA6EBA26A3A9575F271A6D9 /* Geist-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geist-Regular.ttf"; sourceTree = "<group>"; };
+		CBECFF9AA6606C47FD491498 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		D2A08D9314A9D371799A08DA /* ARJOData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ARJOData; path = Packages/ARJOData; sourceTree = SOURCE_ROOT; };
+		E392AAF2AE00D79F34BFA394 /* ARJONetwork */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ARJONetwork; path = Packages/ARJONetwork; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93496238841A57DDB62114A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55EC338075A7CBDE8B09B4FA /* ARJOCore in Frameworks */,
+				5C517F6B934CF45F9A23C87B /* ARJONetwork in Frameworks */,
+				E8E8A826F2785D4CE6EEC0A9 /* ARJOData in Frameworks */,
+				4A10137F1D1079EB49E3CE08 /* ARJOPlayer in Frameworks */,
+				351AC56FCA50B6DE693879DE /* ARJOUI in Frameworks */,
+				B00A1926B14CCC4D2C388587 /* ARJOUpdate in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		132FBB8F6C0923222AA46740 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4816B5B2DC21E335BD2A1954 /* ARJOTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B9C7B08006C76E6528F1133 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CBECFF9AA6606C47FD491498 /* AppEnvironment.swift */,
+				782AD8FDA190A39FF428B8B4 /* AppIconLiquid.icon */,
+				680CAEA64802D169DFFCD1FC /* ARJOTVApp.swift */,
+				6EBB00253E9670C76817412C /* Assets.xcassets */,
+				9BF955269A2955B07B30E69C /* CarPlaySceneDelegate.swift */,
+				5840CDA5D1BC027162F27ECE /* IntroView.swift */,
+				C71F347B578E4A38D2AB9A55 /* Localizable.xcstrings */,
+				1463EEB076C3A4E3EC5277ED /* PrivacyInfo.xcprivacy */,
+				E697C348379C2666FD676170 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3EA5F136DAD0C981A807FB42 = {
+			isa = PBXGroup;
+			children = (
+				3B9C7B08006C76E6528F1133 /* App */,
+				8A88C811E3744D8000A8A3E2 /* Packages */,
+				132FBB8F6C0923222AA46740 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46F6BCF6EBEDED319F5A5D29 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				718251CA74912C18A4A90F32 /* Geist-Medium.ttf */,
+				CAA6EBA26A3A9575F271A6D9 /* Geist-Regular.ttf */,
+				CA66CB1D11191E291EA4AF66 /* GeistMono-Regular.ttf */,
+				9F9F452080FB9C0440585704 /* OFL-Geist.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8A88C811E3744D8000A8A3E2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				77F58C59A54F5A1C3357B02C /* ARJOCore */,
+				D2A08D9314A9D371799A08DA /* ARJOData */,
+				E392AAF2AE00D79F34BFA394 /* ARJONetwork */,
+				63B3B5A575E01CE99E84D44F /* ARJOPlayer */,
+				407C0CE24605CC774736F2E7 /* ARJOUI */,
+				9988B079978612927B3E5FB0 /* ARJOUpdate */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		E697C348379C2666FD676170 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41F3FBD426E071580DDDDC40 /* ArjoIntro.mp4 */,
+				46F6BCF6EBEDED319F5A5D29 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94799D96EDDBC38F7D4A1547 /* ARJOTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E0D70C051273A82A462BB1 /* Build configuration list for PBXNativeTarget "ARJOTV" */;
+			buildPhases = (
+				AFFB33069E425368F59DC0CF /* Sources */,
+				841DC80EA2E3E567136526F5 /* Resources */,
+				93496238841A57DDB62114A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARJOTV;
+			packageProductDependencies = (
+				25AEFD59610360F72B3EDC28 /* ARJOCore */,
+				418AAAE6D358C5501A72A652 /* ARJONetwork */,
+				A9A724B15B9CAC45C2763B3C /* ARJOData */,
+				8A9D74A3DD9837C6CBB8C292 /* ARJOPlayer */,
+				4267D61E1841356A2BC59621 /* ARJOUI */,
+				9F9E1E57ACDB33502A65B88D /* ARJOUpdate */,
+			);
+			productName = ARJOTV;
+			productReference = 4816B5B2DC21E335BD2A1954 /* ARJOTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63CD8DE92ACDCEB5DC06E54D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					94799D96EDDBC38F7D4A1547 = {
+						DevelopmentTeam = D752V8XA4G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F34993B7C5365839E6E64D3 /* Build configuration list for PBXProject "ARJOTV" */;
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+			);
+			mainGroup = 3EA5F136DAD0C981A807FB42;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4CA265C1494662EB65446A28 /* XCLocalSwiftPackageReference "Packages/ARJOCore" */,
+				49B00E983AA26DC8CA3EB156 /* XCLocalSwiftPackageReference "Packages/ARJOData" */,
+				04171C0244EDC7E385F9C353 /* XCLocalSwiftPackageReference "Packages/ARJONetwork" */,
+				E022E5F41D5E637F19FAD003 /* XCLocalSwiftPackageReference "Packages/ARJOPlayer" */,
+				2FD8BF208737905100DE0790 /* XCLocalSwiftPackageReference "Packages/ARJOUI" */,
+				7FA89DD94A186CDEA7C0581B /* XCLocalSwiftPackageReference "Packages/ARJOUpdate" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 132FBB8F6C0923222AA46740 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94799D96EDDBC38F7D4A1547 /* ARJOTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841DC80EA2E3E567136526F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC9ADA3F63985C764CC3C70 /* AppIconLiquid.icon in Resources */,
+				285BFCD4B9ECC8C2B3F3E7C9 /* ArjoIntro.mp4 in Resources */,
+				8C63AFF9608447ED8CFCCB30 /* Assets.xcassets in Resources */,
+				616FCD37EDF0D1828E23315D /* Geist-Medium.ttf in Resources */,
+				C6B024A7262861B65CCF391B /* Geist-Regular.ttf in Resources */,
+				2E7B0676800C1475DB116C87 /* GeistMono-Regular.ttf in Resources */,
+				D31B1BF728DF27AD11F713BF /* Localizable.xcstrings in Resources */,
+				31089FB87937FB24C97C57F6 /* OFL-Geist.txt in Resources */,
+				DA912610DA5C4850AE2D2900 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFFB33069E425368F59DC0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5D532AE6A9E779A7B8C3F5 /* ARJOTVApp.swift in Sources */,
+				4C8A03EBDAC1DBFB21796943 /* AppEnvironment.swift in Sources */,
+				13BDBDEEB4FBCE0E132E49AE /* CarPlaySceneDelegate.swift in Sources */,
+				2AF5E5D39F8720B41783C110 /* IntroView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		51B33B5038ABD341C5A673BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIconLiquid;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphonesimulator*]" = AppIconLiquid;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=macosx*]" = AppIconLiquid;
+				"CODE_SIGN_ENTITLEMENTS[sdk=appletvos*]" = App/ARJOTV.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=appletvsimulator*]" = App/ARJOTV.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "App/ARJOTV-iOS-iCloud.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = "App/ARJOTV-iOS-iCloud.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "App/ARJOTV-macOS-iCloud.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				"EXECUTABLE_NAME[sdk=appletvos*]" = ARJOTV;
+				"EXECUTABLE_NAME[sdk=appletvsimulator*]" = ARJOTV;
+				"EXECUTABLE_NAME[sdk=iphoneos*]" = ARJOTV;
+				"EXECUTABLE_NAME[sdk=iphonesimulator*]" = ARJOTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "IP Television+";
+				INFOPLIST_KEY_CFBundleName = "IPTelevision+";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.arjo.iptelevision;
+				PRODUCT_MODULE_NAME = ARJOTV;
+				PRODUCT_NAME = "IPTelevision+";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ICLOUD_SYNC";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Debug;
+		};
+		5CD1726EF45332A9D7F539E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D752V8XA4G;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Debug;
+		};
+		C357626CB805A19A5909A642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIconLiquid;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphonesimulator*]" = AppIconLiquid;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=macosx*]" = AppIconLiquid;
+				"CODE_SIGN_ENTITLEMENTS[sdk=appletvos*]" = App/ARJOTV.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=appletvsimulator*]" = App/ARJOTV.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "App/ARJOTV-iOS-iCloud.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = "App/ARJOTV-iOS-iCloud.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "App/ARJOTV-macOS-iCloud.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_PREVIEWS = YES;
+				"EXECUTABLE_NAME[sdk=appletvos*]" = ARJOTV;
+				"EXECUTABLE_NAME[sdk=appletvsimulator*]" = ARJOTV;
+				"EXECUTABLE_NAME[sdk=iphoneos*]" = ARJOTV;
+				"EXECUTABLE_NAME[sdk=iphonesimulator*]" = ARJOTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "IP Television+";
+				INFOPLIST_KEY_CFBundleName = "IPTelevision+";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.arjo.iptelevision;
+				PRODUCT_MODULE_NAME = ARJOTV;
+				PRODUCT_NAME = "IPTelevision+";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ICLOUD_SYNC";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		D2AF8B31433EC7B68FD6660C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D752V8XA4G;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71E0D70C051273A82A462BB1 /* Build configuration list for PBXNativeTarget "ARJOTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B33B5038ABD341C5A673BD /* Debug */,
+				C357626CB805A19A5909A642 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9F34993B7C5365839E6E64D3 /* Build configuration list for PBXProject "ARJOTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD1726EF45332A9D7F539E0 /* Debug */,
+				D2AF8B31433EC7B68FD6660C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		04171C0244EDC7E385F9C353 /* XCLocalSwiftPackageReference "Packages/ARJONetwork" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ARJONetwork;
+		};
+		2FD8BF208737905100DE0790 /* XCLocalSwiftPackageReference "Packages/ARJOUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ARJOUI;
+		};
+		49B00E983AA26DC8CA3EB156 /* XCLocalSwiftPackageReference "Packages/ARJOData" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ARJOData;
+		};
+		4CA265C1494662EB65446A28 /* XCLocalSwiftPackageReference "Packages/ARJOCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ARJOCore;
+		};
+		7FA89DD94A186CDEA7C0581B /* XCLocalSwiftPackageReference "Packages/ARJOUpdate" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ARJOUpdate;
+		};
+		E022E5F41D5E637F19FAD003 /* XCLocalSwiftPackageReference "Packages/ARJOPlayer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ARJOPlayer;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25AEFD59610360F72B3EDC28 /* ARJOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ARJOCore;
+		};
+		418AAAE6D358C5501A72A652 /* ARJONetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ARJONetwork;
+		};
+		4267D61E1841356A2BC59621 /* ARJOUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ARJOUI;
+		};
+		8A9D74A3DD9837C6CBB8C292 /* ARJOPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ARJOPlayer;
+		};
+		9F9E1E57ACDB33502A65B88D /* ARJOUpdate */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ARJOUpdate;
+		};
+		A9A724B15B9CAC45C2763B3C /* ARJOData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ARJOData;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 63CD8DE92ACDCEB5DC06E54D /* Project object */;
+}

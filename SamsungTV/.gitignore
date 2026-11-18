@@ -1,0 +1,5 @@
+playlist*.local.properties
+wgt/js/config.local.js
+*.wgt
+signed/
+Installation/

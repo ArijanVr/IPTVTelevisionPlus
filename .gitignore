@@ -1,0 +1,32 @@
+# Lokale Xcode- und SwiftPM-Daten
+xcuserdata/
+.swiftpm/
+.build/
+.DS_Store
+
+# Google-TV-APKs enthalten die private Playlist-Adresse als Voreinstellung: nie einchecken.
+*.apk
+*.apk.sha256
+
+# Tizen: config.local.js und die gebauten Pakete enthalten die private Playlist-Adresse bzw. die Signatur: nie einchecken.
+Tizen/wgt/js/config.local.js
+Tizen/*.wgt
+Tizen/signed/
+# Grosse Download-Archive gehören nicht ins Repo.
+Download-macOS/*.zip
+
+# Build-Zwischenstände und Ausgaben des Release-Skripts (Ergebnisse landen in Download-* und in Projektelab/01_Apps/IPTelevision+/Releases).
+Quellcode/ARJOTV-RELEASE/.build-work/
+Quellcode/ARJOTV-RELEASE/downloads/
+Quellcode/ARJOTV-RELEASE/simulator-builds/
+AndroidTV/Installation/
+AndroidTV/app/build/
+AndroidTV/build/
+AndroidTV/.gradle/
+
+# iCloud-Drive-Konfliktkopien («Datei 2.ext»)
+* 2.*
+* 2
+
+# Download-Ordner enthalten Builds (IPA mit Provisioning-Profil, APK mit Playlist-Adresse): nie veröffentlichen. Releases laufen über GitHub Releases.
+Download-*/

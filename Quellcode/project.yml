@@ -1,0 +1,87 @@
+name: ARJOTV
+options:
+  bundleIdPrefix: ch.arjo
+  deploymentTarget:
+    iOS: "18.0"
+    tvOS: "18.0"
+    macOS: "15.0"
+  developmentLanguage: de
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.2.0"
+    CURRENT_PROJECT_VERSION: "5"
+    # Team für Signing & Capabilities (iCloud-Container, Push).
+    DEVELOPMENT_TEAM: D752V8XA4G
+    CODE_SIGN_STYLE: Automatic
+packages:
+  ARJOCore:
+    path: Packages/ARJOCore
+  ARJONetwork:
+    path: Packages/ARJONetwork
+  ARJOData:
+    path: Packages/ARJOData
+  ARJOPlayer:
+    path: Packages/ARJOPlayer
+  ARJOUI:
+    path: Packages/ARJOUI
+  ARJOUpdate:
+    path: Packages/ARJOUpdate
+targets:
+  ARJOTV:
+    type: application
+    supportedDestinations: [iOS, tvOS, macOS]
+    sources:
+      - path: App
+        excludes:
+          - TopShelf
+          - Info.plist
+          - ARJOTV.entitlements
+          - ARJOTV-CarPlay.entitlements
+          - ARJOTV-iOS-iCloud.entitlements
+          - ARJOTV-macOS-iCloud.entitlements
+    settings:
+      base:
+        PRODUCT_NAME: "IPTelevision+"
+        # Modulname bleibt stabil, auch wenn der Produktname ein «+» enthält.
+        PRODUCT_MODULE_NAME: ARJOTV
+        # App Store Connect lehnt «+» in CFBundleExecutable ab (nur iOS/tvOS; Mac bleibt unverändert, Developer ID).
+        EXECUTABLE_NAME[sdk=iphoneos*]: ARJOTV
+        EXECUTABLE_NAME[sdk=iphonesimulator*]: ARJOTV
+        EXECUTABLE_NAME[sdk=appletvos*]: ARJOTV
+        EXECUTABLE_NAME[sdk=appletvsimulator*]: ARJOTV
+        PRODUCT_BUNDLE_IDENTIFIER: ch.arjo.iptelevision
+        INFOPLIST_FILE: App/Info.plist
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: "IP Television+"
+        INFOPLIST_KEY_CFBundleName: "IPTelevision+"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        STRING_CATALOG_GENERATE_SYMBOLS: NO
+        # Mac: Pflicht für die Notarisierung (Developer ID).
+        ENABLE_HARDENED_RUNTIME[sdk=macosx*]: YES
+        ENABLE_PREVIEWS: YES
+        # Mac: eingebettete Frameworks (VLCKit, Sparkle) liegen in Contents/Frameworks.
+        LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]: "$(inherited) @executable_path/../Frameworks"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        # Liquid-Glass-Icon (Icon Composer) für iOS und macOS; tvOS bleibt beim Asset-Katalog.
+        ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]: AppIconLiquid
+        ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphonesimulator*]: AppIconLiquid
+        ASSETCATALOG_COMPILER_APPICON_NAME[sdk=macosx*]: AppIconLiquid
+        # iCloud-Sync (CloudKit, private Datenbank, Container iCloud.ch.arjo.iptelevision), Anleitung: docs/ICLOUD-SYNC.md.
+        # Die iOS-Datei enthält auch die CarPlay-Berechtigung.
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) ICLOUD_SYNC"
+        CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]: App/ARJOTV-iOS-iCloud.entitlements
+        CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]: App/ARJOTV-iOS-iCloud.entitlements
+        CODE_SIGN_ENTITLEMENTS[sdk=appletvos*]: App/ARJOTV.entitlements
+        CODE_SIGN_ENTITLEMENTS[sdk=appletvsimulator*]: App/ARJOTV.entitlements
+        CODE_SIGN_ENTITLEMENTS[sdk=macosx*]: App/ARJOTV-macOS-iCloud.entitlements
+    dependencies:
+      - package: ARJOCore
+      - package: ARJONetwork
+      - package: ARJOData
+      - package: ARJOPlayer
+      - package: ARJOUI
+      - package: ARJOUpdate

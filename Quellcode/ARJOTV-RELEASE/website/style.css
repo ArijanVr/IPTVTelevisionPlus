@@ -1,0 +1,32 @@
+:root{--bg:#0b1f3b;--bg2:#06142a;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);--text:#f5f7fa;--dim:#9fb0c8;--accent:#fff;--warn:#f5c26b}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:radial-gradient(1200px 600px at 50% -10%,#173a6b 0,var(--bg) 55%,var(--bg2) 100%) fixed;color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;min-height:100vh}
+.hero{text-align:center;padding:72px 20px 32px}
+.mark{height:auto;width:min(420px,80vw);animation:fade .9s ease both}
+h1{font-size:clamp(40px,8vw,72px);letter-spacing:-.03em;margin:16px 0 4px;font-weight:700}
+.lead{font-size:clamp(17px,2.6vw,22px);color:var(--dim);margin:0 auto;max-width:560px}
+.meta{color:var(--dim);font-size:14px;margin-top:14px}
+main{max-width:1040px;margin:0 auto;padding:0 20px 40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;flex-direction:column;gap:12px}
+.card h2{margin:0;font-size:26px;letter-spacing:-.02em}
+.req{margin:0;color:var(--dim);font-size:14px}
+ol{margin:4px 0;padding-left:20px;color:var(--text);font-size:14.5px}
+li{margin:4px 0}
+.note{margin:0;color:var(--dim);font-size:13px}
+.btn{display:inline-block;text-align:center;background:var(--accent);color:#0b1f3b;font-weight:600;text-decoration:none;padding:13px 20px;border-radius:14px;transition:transform .15s,opacity .15s}
+.btn:hover{transform:translateY(-1px);opacity:.92}
+.btn small{display:block;font-weight:400;opacity:.7;font-size:12px}
+.status{border:1px dashed var(--warn);color:var(--warn);border-radius:14px;padding:12px 16px;font-size:14px}
+.verify{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;overflow-x:auto}
+.verify h2{margin:0 0 4px}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+td{padding:8px 6px;border-top:1px solid var(--line);word-break:break-all}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em}
+footer{text-align:center;color:var(--dim);font-size:13px;padding:24px 20px 60px;max-width:700px;margin:0 auto}
+.reveal{animation:rise .7s ease both}
+.card:nth-child(2){animation-delay:.1s}.card:nth-child(3){animation-delay:.2s}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}

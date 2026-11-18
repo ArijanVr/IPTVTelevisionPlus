@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Von Apple am 01.11.2026 für das Team freigegeben (Case-ID 23249073). Video und Audio dürfen nicht in derselben App stehen. -->
+    <key>com.apple.developer.carplay-video</key>
+    <true/>
+</dict>
+</plist>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IP Television+ Launcher-Symbol v3: Bildschirm-Umriss (Off-White #F4F3EF) mit Glut-Plus #FC5F39, um -8 Grad gekippt. Symbol rund 54 dp breit, innerhalb der 66-dp-Sicherheitszone von 108 dp. Quelle: Design/Logo/icon/v3.0.0 (1024er Raster, per group skaliert). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <group android:translateX="13.347" android:translateY="13.824" android:scaleX="0.0794" android:scaleY="0.0794">
+        <path android:fillColor="#F4F3EF" android:fillType="evenOdd" android:pathData="M272 246 H752 A100 100 0 0 1 852 346 V586 A100 100 0 0 1 752 686 H272 A100 100 0 0 1 172 586 V346 A100 100 0 0 1 272 246 Z M276 286 H748 A64 64 0 0 1 812 350 V582 A64 64 0 0 1 748 646 H276 A64 64 0 0 1 212 582 V350 A64 64 0 0 1 276 286 Z M452 726 H572 A20 20 0 0 1 592 746 V746 A20 20 0 0 1 572 766 H452 A20 20 0 0 1 432 746 V746 A20 20 0 0 1 452 726 Z" />
+        <group android:rotation="-8" android:pivotX="512" android:pivotY="466">
+            <path android:fillColor="#FC5F39" android:pathData="M484 374 a28 28 0 0 1 56 0 V438 H604 a28 28 0 0 1 0 56 H540 V558 a28 28 0 0 1 -56 0 V494 H420 a28 28 0 0 1 0 -56 H484 Z" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,14 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <!-- Systemsteuerelemente in Off-White (Glut nur für Fortschritt, Punkte und Fokusring). -->
+        <item name="android:colorAccent">#FDFDFC</item>
+        <item name="android:windowBackground">#090A0A</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Kräftigere neutrale Schatten, damit das Anheben beim Fokus auf dem Fernseher sichtbar ist. -->
+        <item name="android:ambientShadowAlpha">0.25</item>
+        <item name="android:spotShadowAlpha">0.5</item>
+    </style>
+</resources>
