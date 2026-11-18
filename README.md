@@ -22,7 +22,3 @@ Die App fragt beim Start `releases/latest` dieses Repos ab.
 - **macOS:** Sparkle lädt `appcast.xml` und das ZIP aus dem neuesten Release, prüft die EdDSA-Signatur und installiert das Update.
 - **Google TV:** Die App lädt die APK aus dem neuesten Release und öffnet den Android-Installer. Android verlangt dafür einmalig die Erlaubnis «Aus dieser Quelle installieren».
 - **iPhone, iPad, Apple TV:** Die App zeigt einen Hinweis mit Link auf die Release-Seite. Apple erlaubt keine Selbstinstallation.
-
-## Dateien im Repo
-
-- `appcast.xml` ist nur als Beispiel hier. Massgebend ist die Datei im jeweils neuesten Release.
