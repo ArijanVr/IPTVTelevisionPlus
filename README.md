@@ -10,7 +10,7 @@ Alle Dateien stehen unter [Releases](../../releases/latest):
 
 | Plattform | Datei |
 |---|---|
-| macOS 15+ | `IPTelevisionPlus-<Version>-macOS.zip` |
+| macOS 15+ | `IPTelevisionPlus-<Version>-macOS.dmg` |
 | Google TV / Android TV | `IPTelevisionPlus-<Version>-GoogleTV.apk` |
 
 iPhone, iPad und Apple TV: Installation über TestFlight oder Xcode, die App meldet dort nur, dass ein Update bereitliegt.
@@ -19,6 +19,6 @@ iPhone, iPad und Apple TV: Installation über TestFlight oder Xcode, die App mel
 
 Die App fragt beim Start `releases/latest` dieses Repos ab.
 
-- **macOS:** Sparkle lädt `appcast.xml` und das ZIP aus dem neuesten Release, prüft die EdDSA-Signatur und installiert das Update.
+- **macOS:** Sparkle lädt `appcast.xml` und die DMG aus dem neuesten Release, prüft die EdDSA-Signatur und installiert das Update.
 - **Google TV:** Die App lädt die APK aus dem neuesten Release und öffnet den Android-Installer. Android verlangt dafür einmalig die Erlaubnis «Aus dieser Quelle installieren».
 - **iPhone, iPad, Apple TV:** Die App zeigt einen Hinweis mit Link auf die Release-Seite. Apple erlaubt keine Selbstinstallation.
